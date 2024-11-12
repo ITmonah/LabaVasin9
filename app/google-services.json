@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633152719106",
+    "project_id": "labavasin9",
+    "storage_bucket": "labavasin9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633152719106:android:bef788ff8c88cd6dbdda1b",
+        "android_client_info": {
+          "package_name": "com.example.labavasin9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAokxpB0SvIumqkk-1lZXMky8-V8IDvTj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

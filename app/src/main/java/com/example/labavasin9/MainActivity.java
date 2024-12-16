@@ -57,13 +57,16 @@ public class MainActivity extends AppCompatActivity {
                 task.getResult(ApiException.class);
                 Toast toast = Toast.makeText(getApplicationContext(), "Вход успешен", Toast.LENGTH_LONG);
                 toast.show();
-
                 GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
                 if (account != null) {
                     String name = account.getDisplayName();
                     String email = account.getEmail();
                     Toast toast_acc = Toast.makeText(getApplicationContext(), "Привет, " + name + "(" + email + ")", Toast.LENGTH_LONG);
                     toast_acc.show();
+                    Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+                    intent.putExtra("name",name);
+                    intent.putExtra("email",email);
+                    startActivity(intent);
                 }
             } catch (ApiException e) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Ошибка входа", Toast.LENGTH_LONG);
